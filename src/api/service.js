@@ -13,7 +13,9 @@ import axios from 'axios';
 //   API_ENDPOINT = 'ec2-16-171-25-86.eu-north-1.compute.amazonaws.com:3001';
 // }
 
-const API_ENDPOINT = 'http://ec2-13-49-65-110.eu-north-1.compute.amazonaws.com:3001';
+// const API_ENDPOINT = 'http://ec2-13-49-65-110.eu-north-1.compute.amazonaws.com:3001';
+
+const API_ENDPOINT = import.meta.env.VITE_API_URL;
 
 
 const api = axios.create({
