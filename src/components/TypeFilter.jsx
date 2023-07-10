@@ -24,7 +24,7 @@ function TypeFilter({ handleEmployeeType, type }) {
         value={type}
         onChange={handleEmployeeType}
       >
-        <FormControlLabel value={ButtonValues.All} control={<Radio />} label="All" />
+        <FormControlLabel value={ButtonValues.All} control={<Radio />} label="Abobus" />
         <FormControlLabel value={ButtonValues.Employee} control={<Radio />} label="Employee" />
         <FormControlLabel value={ButtonValues.Employer} control={<Radio />} label="Employer" />
       </RadioGroup>
