@@ -11,6 +11,8 @@ const ButtonValues = {
   Employer: 'Employer',
 };
 
+const SALAGA = import.meta.env.VITE_SALAGA
+
 function TypeFilter({ handleEmployeeType, type }) {
   return (
     <FormControl sx={{ padding: '16px' }}>
@@ -27,6 +29,7 @@ function TypeFilter({ handleEmployeeType, type }) {
         <FormControlLabel value={ButtonValues.All} control={<Radio />} label="Abobus" />
         <FormControlLabel value={ButtonValues.Employee} control={<Radio />} label="Employee" />
         <FormControlLabel value={ButtonValues.Employer} control={<Radio />} label="Employer" />
+        <h1>{SALAGA}</h1>
       </RadioGroup>
     </FormControl>
   );
