@@ -11,7 +11,7 @@ const ButtonValues = {
   Employer: 'Employer',
 };
 
-const SALAGA = import.meta.env.VITE_SALAGA
+console.log(import.meta.env.VITE_ABOBUS_ENV);
 
 function TypeFilter({ handleEmployeeType, type }) {
   return (
@@ -26,11 +26,11 @@ function TypeFilter({ handleEmployeeType, type }) {
         value={type}
         onChange={handleEmployeeType}
       >
-        <FormControlLabel value={ButtonValues.All} control={<Radio />} label="Abobus" />
+        <FormControlLabel value={ButtonValues.All} control={<Radio />} label="All" />
         <FormControlLabel value={ButtonValues.Employee} control={<Radio />} label="Employee" />
         <FormControlLabel value={ButtonValues.Employer} control={<Radio />} label="Employer" />
-        <h1>{SALAGA}</h1>
       </RadioGroup>
+      <h1>{import.meta.env.VITE_ABOBUS_ENV}</h1>
     </FormControl>
   );
 }
