@@ -15,7 +15,7 @@ import axios from 'axios';
 
 // const API_ENDPOINT = 'http://ec2-13-49-65-110.eu-north-1.compute.amazonaws.com:3001';
 
-const API_ENDPOINT = import.meta.env.VITE_API_URL;
+const API_ENDPOINT = import.meta.env.VITE_API_URL || 'http://ec2-13-49-65-110.eu-north-1.compute.amazonaws.com:3001';
 
 
 const api = axios.create({
