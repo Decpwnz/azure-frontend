@@ -13,8 +13,16 @@ const ButtonValues = {
 
 console.log('import.meta.env.VITE_ABOBUS_ENV', import.meta.env.VITE_ABOBUS_ENV);
 console.log('import.meta.env.ABOBUS_ENV', import.meta.env.ABOBUS_ENV);
+console.log('import.meta.env.VITE_API_ENDPOINT', import.meta.env.VITE_API_ENDPOINT);
+console.log('import.meta.env.API_ENDPOINT', import.meta.env.API_ENDPOINT);
+console.log('import.meta.env.VITE_API_URL', import.meta.env.VITE_API_URL);
+console.log('import.meta.env.API_URL', import.meta.env.API_URL);
 console.log('process.env.VITE_ABOBUS_ENV', process.env.VITE_ABOBUS_ENV);
 console.log('process.env.ABOBUS_ENV', process.env.ABOBUS_ENV);
+console.log('process.env.VITE_API_ENDPOINT', process.env.VITE_API_ENDPOINT);
+console.log('process.env.API_ENDPOINT', process.env.API_ENDPOINT);
+console.log('process.env.VITE_API_URL', process.env.VITE_API_URL);
+console.log('process.env.API_URL', process.env.API_URL);
 
 function TypeFilter({ handleEmployeeType, type }) {
   return (
