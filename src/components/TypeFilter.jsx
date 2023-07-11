@@ -11,7 +11,10 @@ const ButtonValues = {
   Employer: 'Employer',
 };
 
-console.log(import.meta.env.VITE_ABOBUS_ENV);
+console.log('import.meta.env.VITE_ABOBUS_ENV', import.meta.env.VITE_ABOBUS_ENV);
+console.log('import.meta.env.ABOBUS_ENV', import.meta.env.ABOBUS_ENV);
+console.log('process.env.VITE_ABOBUS_ENV', process.env.VITE_ABOBUS_ENV);
+console.log('process.env.ABOBUS_ENV', process.env.ABOBUS_ENV);
 
 function TypeFilter({ handleEmployeeType, type }) {
   return (
