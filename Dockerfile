@@ -13,10 +13,10 @@ RUN yarn install
 # Copy all files and folders from the current directory to the /app directory in the container
 COPY . .
 
-ARG API_URL=http://ec2-13-48-106-116.eu-north-1.compute.amazonaws.com:3001
-RUN touch .env
-RUN echo VITE_API_URL=${API_URL} > .env
-RUN cat .env
+# ARG API_URL=http://ec2-13-48-106-116.eu-north-1.compute.amazonaws.com:3001
+# RUN touch .env
+# RUN echo VITE_API_URL=${API_URL} > .env
+# RUN cat .env
 
 # Build the application
 RUN yarn build
